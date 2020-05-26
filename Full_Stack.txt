@@ -1,3 +1,5 @@
 HTML and CSS
 javascript
 bootsrap
+jquery
+js
