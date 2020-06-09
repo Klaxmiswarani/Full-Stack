@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>query introduction</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnHide").click(function(){
+                $("#id1").hide();
+            });
+            $("#btnShow").click(function(){
+                $("#id1").show(fast);
+            });
+            $("#btnToggle").click(function(){
+                $("#id2").toggle(2000);
+            });
+
+
+        });
+        </script>
+    </head>
+    <body>
+        <h1 id="id1">JAI HIND!</h1>
+        <h2 id="id2"> BHARATH</h2>
+        <button id="btnHide" type="button">hide</button>
+        <button id="btnShow" type="button">show</button>
+        <button id="btnToggle" type="button">toggle</button>
+    </body>
+

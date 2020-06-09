@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>query introduction</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnfadeIn").click(function(){
+                $("#id1").fadeIn();
+            });
+            $("#btnfadeOut").click(function(){
+                $("#id1").fadeOut();
+            });
+            $("#btnToggle").click(function(){
+                $("#id1").fadeToggle();
+            });
+
+
+        });
+        </script>
+    </head>
+    <body>
+        <h1 id="id1">JAI HIND!</h1>
+        <button id="btnfadeIn" type="button">fadein</button>
+        <button id="btnfadeOut" type="button">fadeOut</button>
+        <button id="btnToggle" type="button">fade toggle</button>
+    </body>
+
+
+</html>

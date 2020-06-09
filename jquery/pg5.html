@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>query introduction</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnSlideDown").click(function(){
+                $("#div1").slideDown();
+            });
+            $("#btnSlideUp").click(function(){
+                $("#div1").slideUp();
+            });
+            $("#btnSlideToggle").click(function(){
+                $("#div2").slideToggle();
+            });
+
+
+        });
+        </script>
+    </head>
+    <body>
+        <div id="div1">
+            <h1>slidedown</h1>
+        </div>
+        <div id="div2">
+            <h1>slideup</h1>
+        </div>
+        <button id="btnSlideDown" type="button">slidedown</button>
+        <button id="btnSlideUp" type="button">slideup</button>
+        <button id="btnSlideToggle" type="button">slide toggle</button>
+    </body>
+
+
+</html>
