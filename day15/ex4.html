@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JQUERY ACCORDINS</title>
+        <script type="text/javascript" src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#div1").slideUp();
+            $("#div2").slideUp();
+            $("#div3").slideUp();
+            $("#id1").click(function(){
+                $("#div1").slideDown();
+
+            });
+            $("#id2").click(function(){
+                $("#div2").slideDown();
+                $("#div1").slideUp();
+                $("#div3").slideUp();
+
+            });
+            $("#id3").click(function(){
+                $("#div3").slideDown();
+                $("#div1").slideUp();
+                $("#div2").slideUp();
+
+            });
+
+
+        });
+        </script>
+    </head>
+    <body>
+        <div id="id1">
+            <h1>
+                iam indian
+            </h1>
+            <div id="div1">
+        <p>hi</p></div>
+        </div>
+        <div id="id2">
+            <h1>
+                jai hind
+            </h1>
+            <div id="div2"><p>india</p></div>
+        </div>
+        <div id="id3">
+            <h1>
+                indian army
+            </h1>
+            <div id="div3"><p>jai</p></div>
+        </div>
+    </body>
+</html>
