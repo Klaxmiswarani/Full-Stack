@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnAddCss").click(function(){
+                $("#div1").css("background-color","lightblue");
+
+            });
+            $("#btnAddCss1").click(function(){
+                $("#div1").css({
+                    "background-color":"lightblue",
+                    "color":"darkblack",
+                    "font-size":"xx-large",
+                    });
+
+            });
+
+
+        });
+       
+
+        </script>
+        </head>
+        <body>
+            <div  id="div1">
+                <h1>application working status</h1>
+            </div>
+            <div>
+                <button type="button" id="btnAddCss">single property</button>
+                <button type="button" id="btnAddCss1">multiple property</button>
+            </div>
+
+        </body>
+        </html>

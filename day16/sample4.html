@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btnAddClass").click(function(){
+                $("p").addClass("test");
+
+            });
+
+        });
+        </script>
+        <style>
+            p{
+                font-size:medium;
+                font-style:normal;
+                font-family: Arial, Helvetica, sans-serif;
+
+            }
+            .test
+            {
+                font-style:italic;
+                font-size: xx-large;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+        </style>
+    </head>
+    <body>
+        <p>indian army</p><br/>
+        <button type="button" id="btnAddClass">add class</button>
+
+    </body>
+</html>

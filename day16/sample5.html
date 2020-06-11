@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   
+    <title>login</title>
+    <link rel="stylesheets" href="bootstrap-4.5.0-dist/css/bootstrap.min.css"/>
+    <script src="bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-4.5.0-dist/js/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#btnLogin").click(function(){
+            var v1=$("#txtUsernamer").val();
+            var v2=$("#txtPassword").val();
+            if(v1==' ' && v2==' '){
+                $('input[type="text"]').css("border","2px solid red");
+                window.alert("fill username and password");
+            }
+            else{
+                //we can pass to server side
+            }
+
+        });
+
+    });
+   
+
+
+    </script>
+     <style type="text/css">
+     </style>
+</head>
+<body>
+    <div class="container">
+    <form action="" method="POST">
+        <div class="form-group">
+            <label for="username">username</label>
+            <input type="text" class="form-control" id="txtUsername" placeholder="enter username"/>
+        </div>
+        <div class="form-group">
+            <label for="password">password</label>
+            <input type="text" class="form-control" id="txtPassword" placeholder="enter password"/>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btnLogin">Login</button>
+    </form>
+    </div>
+</body>
+</html>
