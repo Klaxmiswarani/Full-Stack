@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mira mira meesam js</title>
+    </head>
+    <body>
+              <audio id="aud1">
+        <source src="mira.mp3" type="audio/mp3"/>
+    </audio>
+    <button type="button" onclick="playAudio()">play</button>
+    <button type="button" onclick="pauseAudio()">pause</button>
+    <script>
+        var a1=document.getElementById("aud1");
+       function playAudio(){
+           a1.play();
+       }
+       function pauseAudio(){
+           a1.pause();
+       }
+        </script>
+    </body>
+</html>
